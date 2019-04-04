@@ -267,8 +267,6 @@ Wire Wire Line
 	5850 3150 5850 3050
 Wire Wire Line
 	2950 2150 3100 2150
-Wire Wire Line
-	5850 2150 5850 2350
 Connection ~ 5850 3050
 Wire Wire Line
 	3800 2450 3800 2050
@@ -282,64 +280,10 @@ Wire Wire Line
 	5200 2450 5300 2450
 Wire Wire Line
 	5200 2550 5450 2550
-$Comp
-L SiliconLabs:Si8621 U?
-U 1 1 5C2FADEC
-P 6800 2500
-F 0 "U?" H 6775 2915 50  0000 C CNN
-F 1 "Si8621" H 6775 2824 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6800 2500 50  0001 C CNN
-F 3 "" H 6800 2500 50  0001 C CNN
-	1    6800 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 2450 7250 2450
-Wire Wire Line
-	7200 2550 7250 2550
-Text HLabel 7250 2450 2    50   Output ~ 0
+Text HLabel 6400 2450 2    50   Output ~ 0
 TX
-Text HLabel 7250 2550 2    50   Input ~ 0
+Text HLabel 6400 2550 2    50   Input ~ 0
 RX
-Wire Wire Line
-	6350 2650 6300 2650
-Wire Wire Line
-	6300 2650 6300 2700
-Wire Wire Line
-	6350 2350 5850 2350
-Connection ~ 5850 2350
-Wire Wire Line
-	5850 2350 5850 3050
-$Comp
-L power:GNDS #PWR?
-U 1 1 5C2FD81C
-P 6300 2700
-F 0 "#PWR?" H 6300 2450 50  0001 C CNN
-F 1 "GNDS" H 6305 2527 50  0000 C CNN
-F 2 "" H 6300 2700 50  0001 C CNN
-F 3 "" H 6300 2700 50  0001 C CNN
-	1    6300 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 2650 7250 2650
-Wire Wire Line
-	7250 2650 7250 2700
-Wire Wire Line
-	7200 2350 7250 2350
-Text HLabel 7250 2350 2    50   Input ~ 0
-3V3IN
-$Comp
-L power:GND #PWR?
-U 1 1 5C2FFBE9
-P 7250 2700
-F 0 "#PWR?" H 7250 2450 50  0001 C CNN
-F 1 "GND" H 7255 2527 50  0000 C CNN
-F 2 "" H 7250 2700 50  0001 C CNN
-F 3 "" H 7250 2700 50  0001 C CNN
-	1    7250 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2050 3650 2050 3700
 Connection ~ 2350 3700
@@ -371,8 +315,6 @@ Wire Wire Line
 Wire Wire Line
 	5300 2400 5300 2450
 Connection ~ 5300 2450
-Wire Wire Line
-	5300 2450 6350 2450
 $Comp
 L Device:R_Small R?
 U 1 1 5C315A88
@@ -387,8 +329,6 @@ $EndComp
 Wire Wire Line
 	5450 2400 5450 2550
 Connection ~ 5450 2550
-Wire Wire Line
-	5450 2550 6350 2550
 Wire Wire Line
 	5450 2200 5450 2150
 Connection ~ 5450 2150
@@ -438,4 +378,10 @@ F 3 "http://www.ftdichip.com/Products/ICs/FT230X.html" H 4500 2850 50  0001 C CN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4600 2150
+Wire Wire Line
+	5850 2150 5850 3050
+Wire Wire Line
+	5300 2450 6400 2450
+Wire Wire Line
+	5450 2550 6400 2550
 $EndSCHEMATC
